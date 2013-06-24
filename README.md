@@ -4,7 +4,7 @@ SSW.Framework.Web.Mvc
 <blockquote>“It has long been an axiom of mine that the little things are infinitely the most important.” 
 <br/>― Arthur Conan Doyle, The Memoirs of Sherlock Holmes</blockquote>
 
-At SSW we make lots of web applications using the ASP.NET technology stack. 
+At SSW, we make lots of web applications using the ASP.NET technology stack. 
 We love MVC and the new direction, tools and 3rd party libraries that are developing in this space.
 
 As we work away building awesome solutions, we often create things that are useful beyond the scope of the current website. 
