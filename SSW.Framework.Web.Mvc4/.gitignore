@@ -22,6 +22,10 @@ build/
 # output nuget package file
 *.nupkg
 
+#ignore output dlls copied to package/lib/net40 folder
+package/lib/net40/*.dll
+
+
 *_i.c
 *_p.c
 *.ilk

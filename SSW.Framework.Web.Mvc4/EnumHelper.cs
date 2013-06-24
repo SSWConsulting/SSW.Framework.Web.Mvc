@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Reflection;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 using System.Web.Mvc;
 
 namespace SSW.Framework.Web.Mvc
@@ -25,6 +26,7 @@ namespace SSW.Framework.Web.Mvc
             }
             return result;
         }
+
         public static string GetDisplayName(Type enumType, string enumValue)
         {
             var member = enumType.GetMember(enumValue).FirstOrDefault();
@@ -42,6 +44,9 @@ namespace SSW.Framework.Web.Mvc
                         return attr.GetName();
                     }
                 }
+                // try description attribute
+                var attr2 = member.GetCustomAttributes(typeof(DescriptionAttribute), false).OfType<DescriptionAttribute>().FirstOrDefault();
+                if (attr2 != null) return attr2.Description;
             }
             return enumValue;
         }

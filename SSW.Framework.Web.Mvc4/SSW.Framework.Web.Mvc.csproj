@@ -93,11 +93,15 @@
     <Content Include="Assets\NuGet.exe" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="postbuild.ps1" />
     <None Include="publish.ps1" />
     <None Include="package\content\Views\Shared\_Control.cshtml" />
     <None Include="package\SSW.Framework.Web.Mvc.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>powershell -file "$(ProjectDir)postbuild.ps1" -projectDir $(ProjectDir)</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
