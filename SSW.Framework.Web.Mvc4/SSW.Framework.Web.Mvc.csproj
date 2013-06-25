@@ -93,6 +93,7 @@
     <Content Include="Assets\NuGet.exe" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="package.ps1" />
     <None Include="postbuild.ps1" />
     <None Include="publish.ps1" />
     <None Include="package\content\Views\Shared\_Control.cshtml" />
