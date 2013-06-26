@@ -10,6 +10,7 @@ using System.Web.Mvc.Html;
 
 namespace SSW.Framework.Web.Mvc
 {
+
     public enum ViewModes
     {
         Read,
@@ -19,6 +20,7 @@ namespace SSW.Framework.Web.Mvc
     public static class ControlExtensions
     {
         private const string ViewModeKey = "__VIEWMODE";
+
 
         public static ViewModes GetViewMode(this HtmlHelper html)
         {
@@ -32,6 +34,8 @@ namespace SSW.Framework.Web.Mvc
                 return ViewModes.Read;
             }
         }
+
+
         public static void SetViewMode(this HtmlHelper html, ViewModes mode)
         {
             html.ViewData[ViewModeKey] = mode;

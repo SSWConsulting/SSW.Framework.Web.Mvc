@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace SSW.Framework.Web.Mvc
 {
+    /// <summary>
+    /// Type conversion methods.
+    /// </summary>
     public static class ConvertHelper
     {
         /// <summary>

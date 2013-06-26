@@ -8,6 +8,9 @@ using System.Web;
 
 namespace SSW.Framework.Web.Mvc.Security
 {
+    /// <summary>
+    /// Authorization provider that caches the IPrincipal instance.
+    /// </summary>
     public class WebCacheAuthorizationProvider : IAuthorizationProvider
     {
         

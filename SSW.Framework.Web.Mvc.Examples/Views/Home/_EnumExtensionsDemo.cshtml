@@ -1,0 +1,37 @@
+﻿@model SSW.Framework.Web.Mvc.Examples.Models.Order
+
+@using SSW.Framework.Web.Mvc
+@using SSW.Framework.Web.Mvc.Examples.Models
+
+@using (Html.BeginForm("Home", "Doc", FormMethod.Post, new { @View = "EnumExtensions", @class="form-horizontal"}))
+{
+    <div class="contol-group">
+        @Html.LabelFor(m => m.CustomerName, new { @class="control-label" })
+        <div class="controls">
+            @Html.TextBoxFor(m => m.CustomerName)
+            @Html.ValidationMessageFor(m => m.CustomerName)
+        </div>
+    </div>
+    
+    <div class="contol-group">
+        @Html.LabelFor(m => m.OrderNumber, new { @class="control-label" })
+        <div class="controls">
+            @Html.TextBoxFor(m => m.OrderNumber)
+            @Html.ValidationMessageFor(m => m.OrderNumber)
+        </div>
+    </div>
+    
+    <div class="contol-group">
+        @Html.LabelFor(m => m.Status, new { @class="control-label" })
+        <div class="controls">
+            @Html.DropDownListFor(m => m.Status, OrderStatus.New.ToSelectListItems())
+            @Html.ValidationMessageFor(m => m.Status)
+        </div>
+        
+    </div>
+    
+}
+
+
+
+

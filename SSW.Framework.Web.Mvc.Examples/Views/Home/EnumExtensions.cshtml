@@ -1,0 +1,50 @@
+﻿@using SSW.Framework.Web.Mvc.Examples.Models
+
+@{
+    ViewBag.Title = "Enum Extensions";
+}
+
+
+<h2>Enum Extensions</h2>
+
+<p>These extensions help work with and bind to Enumerated Types. Standard attributes can be used to assign user-readable strings to each enumerated type value</p>
+
+
+<h3>Demo</h3>
+<p>The DropDownList below has been bound directly to an Enum.</p>
+
+@{
+    var DemoModel = new SSW.Framework.Web.Mvc.Examples.Models.Order()
+    { 
+        CustomerName = "John Smith",
+        OrderNumber = "11206",
+        Status = OrderStatus.PendingPayment
+    };
+}
+@Html.Partial("_EnumExtensionsDemo", DemoModel)
+
+
+
+<h3>Code Samples</h3>
+
+
+<h4>Decorate an Enumerated Type in your model with DisplayAttribute</h4>
+<pre class="brush: csharp">
+@Html.Raw(File.ReadAllText(Server.MapPath("~/Models/OrderStatus.cs")))
+</pre>
+<b>Figure: Enum Definition</b>
+
+
+<h4>Use the Enum in your Model</h4>
+<pre class="brush: csharp">
+@Html.Raw(File.ReadAllText(Server.MapPath("~/Models/Order.cs")))
+</pre>
+<b>Figure: Model class</b>
+
+<h4>Bind Enumerated Type in your View</h4>
+<pre class="brush: razor">
+@Html.Raw(File.ReadAllText(Server.MapPath("~/")+"Views/Home/_EnumExtensionsDemo.cshtml"))
+</pre>
+<b>Figure: Razor view</b>
+
+

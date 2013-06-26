@@ -6,6 +6,11 @@ using System.Web.Mvc;
 
 namespace SSW.Framework.Web.Mvc
 {
+    /// <summary>
+    /// Extend SelectListItem with a Generic Typed Value. 
+    /// Uses ConvertHelper to perform type conversion
+    /// </summary>
+    /// <typeparam name="TValue"></typeparam>
     public class SelectListItem<TValue> : SelectListItem
     {
         public new TValue Value
@@ -21,8 +26,17 @@ namespace SSW.Framework.Web.Mvc
         }
     }
 
+    /// <summary>
+    /// Extensions for IEnumerable collectiojns of SelectListItem 
+    /// </summary>
     public static class SelectListItemExtensions
     {
+        /// <summary>
+        /// Set selected property on matching SelectListItem within a collecion 
+        /// </summary>
+        /// <param name="items">Collection of SelectListItem</param>
+        /// <param name="value">value to match</param>
+        /// <returns></returns>
         public static IEnumerable<SelectListItem> SelectValue(this IEnumerable<SelectListItem> items, string value)
         {
             foreach (var item in items)
@@ -39,6 +53,15 @@ namespace SSW.Framework.Web.Mvc
             }
         }
 
+
+        /// <summary>
+        /// Set selected property on matching SelectListItem within a collecion.
+        /// This overload supports generic typed value
+        /// </summary>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="items"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static IEnumerable<SelectListItem<TValue>> SelectValue<TValue>(this IEnumerable<SelectListItem<TValue>> items, TValue value)
         {
             foreach (var item in items)

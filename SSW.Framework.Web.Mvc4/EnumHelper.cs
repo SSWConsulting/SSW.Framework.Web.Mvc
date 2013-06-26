@@ -9,8 +9,16 @@ using System.Web.Mvc;
 
 namespace SSW.Framework.Web.Mvc
 {
+    /// <summary>
+    /// Helper functions to access enum attributes  
+    /// </summary>
     public static class EnumHelper
     {
+        /// <summary>
+        /// Build a dictionary mapping Enum value to diaplay anme strings
+        /// </summary>
+        /// <typeparam name="TEnum"></typeparam>
+        /// <returns></returns>
         public static Dictionary<TEnum, string> GetDisplayNames<TEnum>() where TEnum : struct, IConvertible
         {
             var enumType = typeof(TEnum);
@@ -27,6 +35,14 @@ namespace SSW.Framework.Web.Mvc
             return result;
         }
 
+
+        /// <summary>
+        /// Get display name for am Enum value.
+        /// First attempts to Read DisplayAttribute.Name, then falls back to DescriptionAttribute and then just the raw Enum name. 
+        /// </summary>
+        /// <param name="enumType"></param>
+        /// <param name="enumValue"></param>
+        /// <returns></returns>
         public static string GetDisplayName(Type enumType, string enumValue)
         {
             var member = enumType.GetMember(enumValue).FirstOrDefault();

@@ -1,0 +1,134 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+
+
+/* top-level styles */
+#RootContainer {
+    max-width: 1000px; 
+    margin:auto;
+}
+
+/* styles for top banner & links */
+
+#MenuLogo {
+    position: absolute;
+}
+
+#MenuBar {
+    height: 36px;
+    background: #545454;
+    line-height: 35px;
+    margin: 0 3px;
+    padding-left: 100px;
+}
+
+#MenuBar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#MenuBar li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+}
+
+
+#MenuBar a {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 36px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    color: white;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+#MenuBar a:hover {
+    display: block;
+    background-color: #F0F0F0;
+    text-decoration: none;
+    color: #545454;
+}
+
+
+
+
+
+#UserPanel {
+    height: 28px;
+    text-align: right;
+    padding: 12px 6px;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+
+#LeftNav {
+    margin-top: 15px;
+}

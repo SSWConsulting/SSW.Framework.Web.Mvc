@@ -8,8 +8,20 @@ using System.Web.Mvc;
 
 namespace SSW.Framework.Web.Mvc
 {
+
+    /// <summary>
+    /// Extensions for working with Enums.
+    /// DsiplayNames are cached for performance.
+    /// </summary>
     public static class EnumExtensions
     {
+
+        /// <summary>
+        /// Get user-readable display name (as read from Attrributtes) for an Enum value
+        /// </summary>
+        /// <typeparam name="T">an enumerated type</typeparam>
+        /// <param name="value">enum value</param>
+        /// <returns></returns>
         public static string ToDisplayName<T>(this T value) where T : struct, IConvertible
         {
             if (!typeof(T).IsEnum)
@@ -19,6 +31,12 @@ namespace SSW.Framework.Web.Mvc
             return NamesCache<T>.GetDisplayName(value);
         }
 
+        /// <summary>
+        /// Get user-readable display name for a nullable Enum value
+        /// </summary>
+        /// <typeparam name="T">an enumerated type</typeparam>
+        /// <param name="value">enum value</param>
+        /// <returns></returns>
         public static string ToDisplayName<T>(this T? value) where T : struct, IConvertible
         {
             if (!typeof(T).IsEnum)
@@ -35,6 +53,12 @@ namespace SSW.Framework.Web.Mvc
             }
         }
 
+        /// <summary>
+        /// Generate list collection of SelectListItem for a Nullable Enumerated Type
+        /// </summary>
+        /// <typeparam name="T">Must ba an Enum type</typeparam>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static IEnumerable<SelectListItem> ToSelectListItems<T>(this T? value) where T : struct, IConvertible, IComparable
         {
             if (!typeof(T).IsEnum)
@@ -63,6 +87,12 @@ namespace SSW.Framework.Web.Mvc
         }
 
 
+        /// <summary>
+        /// Generate list collection of SelectListItem for an Enumerated Type
+        /// </summary>
+        /// <typeparam name="T">Must ba an Enum type</typeparam>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static IEnumerable<SelectListItem> ToSelectListItems<T>(this T value) where T : struct, IConvertible, IComparable
         {
             if (!typeof(T).IsEnum)
@@ -97,6 +127,12 @@ namespace SSW.Framework.Web.Mvc
                 return _names;
             }
 
+
+            /// <summary>
+            /// Get the DisplayName (as specified by DisplayName attribute) for an Enum value
+            /// </summary>
+            /// <param name="value"></param>
+            /// <returns></returns>
             public static string GetDisplayName(T value)
             {
                 if (!typeof(T).IsEnum)
