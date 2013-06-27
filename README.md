@@ -13,4 +13,3 @@ As we work away building awesome solutions, we often create things that are usef
 The first thing we do when creating an MVC web application is to install the SSW.Framework.Web.Mvc NuGet package.
 SSW has now opened this framework up to the community to improve MVC applications everywhere.
 
-
