@@ -64,7 +64,9 @@ IF NOT DEFINED MSBUILD_PATH (
 :: Deployment
 :: ----------
 
+echo Running custom deploy script - brendan@ssw
 echo Handling .NET Web Application deployment.
+
 
 :: 1. Build to the temporary path
 IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
