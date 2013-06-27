@@ -1,0 +1,3 @@
+﻿# Azure deployment File
+[config]
+command = deploy.cmd
