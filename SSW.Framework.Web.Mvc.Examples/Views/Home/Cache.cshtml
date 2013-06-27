@@ -1,0 +1,21 @@
+﻿@using SSW.Framework.Web.Mvc.Examples.Models
+
+@{
+    ViewBag.Title = "CacheHelper";
+}
+
+
+<h2>Cache Helper</h2>
+
+<p>Helper functions for working with System.Web.Caching.Cache</p>
+
+
+<pre class="brush: csharp">
+    var cacheKey = CacheHelper.CreateKey("Cache Name", "Add Optional Id's", "Add Optional Filters");
+    return CacheHelper.GetCacheItem(cacheKey, new TimeSpan(0, 30, 0), () =>
+    {
+        return "Database call or something Big";
+    });
+</pre>
+<b>Figure: Using the cache</b>
+

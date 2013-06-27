@@ -79,7 +79,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CacheExtensions.cs" />
+    <Compile Include="CacheHelper.cs" />
     <Compile Include="ControlModel.cs" />
     <Compile Include="ConvertHelper.cs" />
     <Compile Include="EnumExtensions.cs" />

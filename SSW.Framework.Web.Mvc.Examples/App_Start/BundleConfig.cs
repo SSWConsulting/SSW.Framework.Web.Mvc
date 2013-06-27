@@ -41,7 +41,7 @@ namespace SSW.Framework.Web.Mvc.Examples
 
 
             // add SyntaxHighlighter 
-            bundles.Add(new ScriptBundle("~/bundles/SyntaxHighlighter").Include(
+            bundles.Add(new ScriptBundle("~/bundles/sh").Include(
                         "~/Scripts/SyntaxHighlighter/shCore.js",
 
                         "~/Scripts/SyntaxHighlighter/shBrushCSharp.js",
@@ -49,7 +49,7 @@ namespace SSW.Framework.Web.Mvc.Examples
                         "~/Scripts/SyntaxHighlighter/shBrushJScript.js",
                         "~/Scripts/SyntaxHighlighter/shBrushRazor.js"));
 
-            bundles.Add(new StyleBundle("~/Content/SyntaxHighlighter").Include(
+            bundles.Add(new StyleBundle("~/Content/sh").Include(
                 "~/Content/SyntaxHighlighter/shCore.css",
                 "~/Content/SyntaxHighlighter/shThemeDefault.css"));
 
