@@ -13,3 +13,8 @@ As we work away building awesome solutions, we often create things that are usef
 The first thing we do when creating an MVC web application is to install the SSW.Framework.Web.Mvc NuGet package.
 SSW has now opened this framework up to the community to improve MVC applications everywhere.
 
+- <a href="http://ssw-mvc.azurewebsites.net" target="_new">Online Demos and Documentation</a>
+- <a href="http://ssw-mvc.azurewebsites.net" target="_new">NuGet Package</a>
+- <a href="http://ssw-mvc.azurewebsites.net" target="_new">Api Documentation</a>
+- <a href="http://www.ssw.com.au" target="_new">SSW Homepage</a>
+

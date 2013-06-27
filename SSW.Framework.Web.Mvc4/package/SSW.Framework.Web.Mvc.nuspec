@@ -6,6 +6,7 @@
     <title>SSW.Framework.Web.Mvc</title>
     <authors>Mark Liu, Eric Phan, Daniel Hyles, Brendan Richards</authors>
     <owners>Mark Liu</owners>
+    <projectUrl>https://github.com/ssw-au/SSW.Framework.Web.Mvc/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>SSW Framework for ASP.NET MVC</description>
     <copyright />
