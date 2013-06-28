@@ -25,6 +25,9 @@ build/
 #ignore output dlls copied to package/lib/net40 folder
 package/lib/net40/*.dll
 
+#ignore file containing our Nuget API key
+Nuget_Api.key
+
 
 *_i.c
 *_p.c
