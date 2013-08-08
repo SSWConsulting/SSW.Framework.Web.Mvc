@@ -85,6 +85,7 @@
     <Compile Include="EnumExtensions.cs" />
     <Compile Include="EnumHelper.cs" />
     <Compile Include="ControlExtensions.cs" />
+    <Compile Include="EnumHtmlExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\WebCacheAuthorizationProvider.cs" />
     <Compile Include="Security\IAuthorizationProvider.cs" />

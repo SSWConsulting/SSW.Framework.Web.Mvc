@@ -21,29 +21,29 @@ public static T GetOrStore&lt;T&gt;(
 	this Cache cache,
 	string key,
 	Func&lt;T&gt; generator
-)</pre></div><div id="ID0ECNCAAAAA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre>&lt;<span class="identifier">ExtensionAttribute</span>&gt; 
-&lt;<span class="identifier">ObsoleteAttribute</span>&gt; 
+)</pre></div><div id="ID0ECNCAAAAA_code_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre>&lt;<span class="identifier">ObsoleteAttribute</span>&gt; 
+&lt;<span class="identifier">ExtensionAttribute</span>&gt; 
 <span class="keyword">Public</span> <span class="keyword">Shared</span> <span class="keyword">Function</span> <span class="identifier">GetOrStore</span>(<span class="keyword">Of</span> T) ( 
 	<span class="parameter">cache</span> <span class="keyword">As</span> <span class="identifier">Cache</span>,
 	<span class="parameter">key</span> <span class="keyword">As</span> <span class="identifier">String</span>,
 	<span class="parameter">generator</span> <span class="keyword">As</span> <span class="identifier">Func</span>(<span class="keyword">Of</span> T)
-) <span class="keyword">As</span> T</pre></div><div id="ID0ECNCAAAAA_code_Plain_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre>&lt;ExtensionAttribute&gt; 
-&lt;ObsoleteAttribute&gt; 
+) <span class="keyword">As</span> T</pre></div><div id="ID0ECNCAAAAA_code_Plain_Div2" class="OH_CodeSnippetContainerCode" style="display: none"><pre>&lt;ObsoleteAttribute&gt; 
+&lt;ExtensionAttribute&gt; 
 Public Shared Function GetOrStore(Of T) ( 
 	cache As Cache,
 	key As String,
 	generator As Func(Of T)
 ) As T</pre></div><div id="ID0ECNCAAAAA_code_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre><span class="keyword">public</span>:
-[<span class="identifier">ExtensionAttribute</span>]
 [<span class="identifier">ObsoleteAttribute</span>]
+[<span class="identifier">ExtensionAttribute</span>]
 <span class="keyword">generic</span>&lt;<span class="keyword">typename</span> T&gt;
 <span class="keyword">static</span> T <span class="identifier">GetOrStore</span>(
 	<span class="identifier">Cache</span>^ <span class="parameter">cache</span>, 
 	<span class="identifier">String</span>^ <span class="parameter">key</span>, 
 	<span class="identifier">Func</span>&lt;T&gt;^ <span class="parameter">generator</span>
 )</pre></div><div id="ID0ECNCAAAAA_code_Plain_Div3" class="OH_CodeSnippetContainerCode" style="display: none"><pre>public:
-[ExtensionAttribute]
 [ObsoleteAttribute]
+[ExtensionAttribute]
 generic&lt;typename T&gt;
 static T GetOrStore(
 	Cache^ cache, 

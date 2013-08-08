@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>SSW.Framework.Web.Mvc</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>SSW.Framework.Web.Mvc</title>
     <authors>Mark Liu, Eric Phan, Daniel Hyles, Brendan Richards</authors>
     <owners>Mark Liu</owners>

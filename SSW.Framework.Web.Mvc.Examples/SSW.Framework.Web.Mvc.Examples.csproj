@@ -41,8 +41,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="SSW.Framework.Web.Mvc">
-      <HintPath>..\SSW.Framework.Web.Mvc4\packages\SSW.Framework.Web.Mvc.1.0.2\lib\net40\SSW.Framework.Web.Mvc.dll</HintPath>
+    <Reference Include="SSW.Framework.Web.Mvc, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SSW.Framework.Web.Mvc4\packages\SSW.Framework.Web.Mvc.1.0.3\lib\net40\SSW.Framework.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -336,8 +337,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\EnumExtensions.cshtml" />
     <Content Include="Views\Home\_EnumExtensionsDemo.cshtml" />
-    <Content Include="Views\Shared\_Control.cshtml" />
     <Content Include="Views\Home\Cache.cshtml" />
+    <Content Include="Views\Shared\_Control.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
